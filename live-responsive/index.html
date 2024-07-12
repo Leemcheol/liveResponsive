@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 임철규 - Live Responsive </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/inter@3.15.0/css/inter.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC|Noto+Sans+TC|Noto+Sans+KR&display=swap">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="./js/live.js"></script>                <!-- 스크립트 간의 순서가 중요함. -->
+</head>
+<body>
+    <header>
+        <div class="mainLogoMenus">
+            <!-- logo -->
+             <h1 class="logo">
+                <a href="#"><img src="./images/logo.svg" alt="로고"></a>
+             </h1>
+            <!-- PC 메뉴 -->
+             <nav class="PCmenu">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">레퍼런스</a></li>
+                    <li><a href="#">스튜디오</a></li>
+                    <li><a href="#">Q &amp; A</a></li>
+                    <li><a href="#">문의사항</a></li>
+                </ul>
+             </nav>
+             <nav class="toggle">
+                <!-- <span onclick="openNav()">
+                    <a href="#"><img src="./images/toggle.svg" alt="토글메뉴"></a>
+                </span> -->
+                <!-- 모바일 메뉴 -->
+                <div class="toggle-container" onclick="toggleMenu()">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </div>
+                 <div id="myNav" class="overlay">
+                    <!-- X 버튼 -->
+                    <!-- <a href="#" class="closeBtn" onclick="closeNav()">
+                        &times;
+                    </a> -->
+                    <!-- 메뉴 -->
+                     <div class="overlay-content">
+                        <ul>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">레퍼런스</a></li>
+                            <li><a href="#">스튜디오</a></li>
+                            <li><a href="#">Q &amp; A</a></li>
+                            <li><a href="#">문의사항</a></li>
+                        </ul>
+                     </div>
+                </div>
+             </nav>
+        </div>
+    </header>
+    <main>
+        <div class="centerImg">
+            <a href="#"><img src="./images/mainimg.png" alt="메인이미지"></a>
+        </div>
+    </main>
+    <footer>
+        <div class="mainBtn">
+            <a href="#" class="layerPopup"><img src="./images/rightBtn.svg" alt="하단버튼"></a>
+        </div>
+    </footer>
+    <!-- popup -->
+     <div class="popup"><span class="close"> &times; </span></div>
+    <div class="bg"></div>
+</body>
+</html>
